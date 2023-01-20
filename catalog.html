@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог: Сливочное мороженое</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="header main-header">
+        <nav class="navigation">
+          <img class="logo" src="" alt="Логотоп Глейси.">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                Каталог
+              </a>
+              <ul class="submenu">
+                <li class="submenu-item new-items">
+                  <a class="submenu-link" href="#">Новинки</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Сливочное</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Щербеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                О компании
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-menu-wrapper">
+          <a class="phone-link" href="tel:+78005558628">+7 800 555-86-28</a>
+          <ul class="user-menu">
+            <li class="user-menu-item search-link">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Поиск.</span>
+              </a>
+            </li>
+            <li class="user-menu-item login-link">
+              <a class="user-menu-link" href="#">
+                Вход
+              </a>
+            </li>
+            <li class="user-menu-item cart-link">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Корзина.</span>
+                2 товара
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="main-inner">
+        <header class="inner-header">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженое</a>
+            </li>
+          </ul>
+          <h1 class="section-title">Сливочное мороженое</h1>
+        </header>
+
+        <section class="filters">
+          <h2 class="visually-hidden">Сортировка и фильтры.</h2>
+          <h3 class="filter-title">Сортировка:</h3>
+          <select class="select-control">
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала дешевое</option>
+            <option value="expensive">сначала дорогое</option>
+          </select>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title price-title">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 120px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+
+      </footer>
+    </div>
+  </body>
+
+</html>

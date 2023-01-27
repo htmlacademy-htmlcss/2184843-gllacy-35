@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+  <body class="pink-bg">
     <div class="page-wrapper">
       <header class="header main-header">
         <nav class="navigation">
@@ -19,7 +19,7 @@
               <a class="navigation-link catalog-link" href="#">
                 Каталог
               </a>
-              <ul class="submenu">
+              <ul class="submenu" hidden>
                 <li class="submenu-item new-items">
                   <a class="submenu-link" href="#">Новинки</a>
                 </li>
@@ -97,11 +97,9 @@
             <option value="cheap">сначала дешевое</option>
             <option value="expensive">сначала дорогое</option>
           </select>
-
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="filter-title price-title">Цена:</legend>
-
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   <span class="visually-hidden">от.</span>
@@ -112,7 +110,6 @@
                   <input class="range-input" type="number" value="5000" name="max-price">
                 </label>
               </div>
-
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 120px">
@@ -126,7 +123,6 @@
                 </div>
               </div>
             </fieldset>
-
             <fieldset class="catalog-filter-group">
               <legend class="filter-title">Жирность:</legend>
               <ul class="catalog-filter-list">
@@ -160,7 +156,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="catalog-filter-group">
               <legend class="filter-title">Наполнители:</legend>
               <ul class="catalog-filter-list">
@@ -211,7 +206,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/raspberry.png" alt="" width="168" height="168">
-                <h2 class="product-title">Малинка</h2>
+                <h3 class="product-title">Малинка</h3>
                 <p class="product-description">Сливочное мороженое с&nbsp;малиновым джемом</p>
               </a>
               <div class="price-wrapper">
@@ -224,7 +219,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/pistachio.png" alt="" width="168" height="168">
-                <h2 class="product-title">Фисташка</h2>
+                <h3 class="product-title">Фисташка</h3>
                 <p class="product-description">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
               </a>
               <div class="price-wrapper">
@@ -237,7 +232,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/blueberry.png" alt="" width="168" height="168">
-                <h2 class="product-title">Черника</h2>
+                <h3 class="product-title">Черника</h3>
                 <p class="product-description">Крем-брюле с&nbsp;черничным джемом</p>
               </a>
               <div class="price-wrapper">
@@ -250,7 +245,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/bubble-gum.png" alt="" width="168" height="168">
-                <h2 class="product-title">Бабл-гам</h2>
+                <h3 class="product-title">Бабл-гам</h3>
                 <p class="product-description">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
               </a>
               <div class="price-wrapper">
@@ -263,7 +258,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/blackberry.png" alt="" width="168" height="168">
-                <h2 class="product-title">Ежевика</h2>
+                <h3 class="product-title">Ежевика</h3>
                 <p class="product-description">Сливочное мороженое с&nbsp;ежевичным джемом</p>
               </a>
               <div class="price-wrapper">
@@ -276,7 +271,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/banana.png" alt="" width="168" height="168">
-                <h2 class="product-title">Банан</h2>
+                <h3 class="product-title">Банан</h3>
                 <p class="product-description">Сливочный пломбир с&nbsp;банановым вкусом</p>
               </a>
               <div class="price-wrapper">
@@ -289,7 +284,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/chocolate.png" alt="" width="168" height="168">
-                <h2 class="product-title">Шоколадка</h2>
+                <h3 class="product-title">Шоколадка</h3>
                 <p class="product-description">Классический шоколадный&nbsp;пломбир</p>
               </a>
               <div class="price-wrapper">
@@ -302,7 +297,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/strawberry.png" alt="" width="168" height="168">
-                <h2 class="product-title">Клубничка</h2>
+                <h3 class="product-title">Клубничка</h3>
                 <p class="product-description">Сливочный пломбир с&nbsp;клубничным вкусом</p>
               </a>
               <div class="price-wrapper">
@@ -315,7 +310,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/lemon.png" alt="" width="168" height="168">
-                <h2 class="product-title">Лимон</h2>
+                <h3 class="product-title">Лимон</h3>
                 <p class="product-description">Освежающий лимонный&nbsp;сорбет</p>
               </a>
               <div class="price-wrapper">
@@ -328,7 +323,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/menthol.png" alt="" width="168" height="168">
-                <h2 class="product-title">Ментол</h2>
+                <h3 class="product-title">Ментол</h3>
                 <p class="product-description">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
               </a>
               <div class="price-wrapper">
@@ -341,7 +336,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/nut.png" alt="" width="168" height="168">
-                <h2 class="product-title">Орешек</h2>
+                <h3 class="product-title">Орешек</h3>
                 <p class="product-description">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
               </a>
               <div class="price-wrapper">
@@ -354,7 +349,7 @@
             <li class="product-list-item">
               <a class="product-list-link" href="#">
                 <img class="product-img" src="images/creme-brulee.png" alt="" width="168" height="168">
-                <h2 class="product-title">Крем-брюле</h2>
+                <h3 class="product-title">Крем-брюле</h3>
                 <p class="product-description">Классическое крем&nbsp;-брюле </p>
               </a>
               <div class="price-wrapper">
@@ -368,7 +363,7 @@
 
           <div class="pagination-wrapper">
             <button class="button button-light button-show-more" type="button">Показать еще</button>
-            <ul class="pagination">
+            <ol class="pagination">
               <li class="pagination-button pagination-prev">
                 <a class="pagination-prev-link" href="#">
                   <span class="visually-hidden">Назад.</span>
@@ -394,7 +389,7 @@
                   <span class="visually-hidden">Вперёд.</span>
                 </a>
               </li>
-            </ul>
+            </ol>
           </div>
         </section>
       </main>

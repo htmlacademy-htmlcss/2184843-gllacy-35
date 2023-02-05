@@ -9,7 +9,7 @@
 
   <body class="pink-bg">
     <div class="page-wrapper">
-      <header class="header main-header">
+      <header class="header page-header">
         <nav class="navigation">
           <a class="logo-link" href="index.html">
             <img class="logo" src="images/logo.svg" alt="Логотоп Глейси." width="137" height="56">
@@ -86,30 +86,22 @@
               <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженое</a>
             </li>
           </ul>
-          <h1 class="section-title">Сливочное мороженое</h1>
+          <h1 class="section-title catalog-type-title">Сливочное мороженое</h1>
         </header>
 
         <section class="filters">
           <h2 class="visually-hidden">Сортировка и фильтры.</h2>
-          <p class="filter-title">Сортировка:</p>
-          <select class="select-control">
-            <option value="popular">по популярности</option>
-            <option value="cheap">сначала дешевое</option>
-            <option value="expensive">сначала дорогое</option>
-          </select>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="select-wrapper">
+              <p class="filter-title">Сортировка:</p>
+              <select class="select-control">
+                <option value="popular">по популярности</option>
+                <option value="cheap">дешевое</option>
+                <option value="expensive">дорогое</option>
+              </select>
+            </div>
             <fieldset class="catalog-filter-group">
-              <legend class="filter-title price-title">Цена:</legend>
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  <span class="visually-hidden">от.</span>
-                  <input class="range-input" type="number" value="0" name="min-price">
-                </label>
-                <label class="catalog-filter-label">
-                  <span class="visually-hidden">до.</span>
-                  <input class="range-input" type="number" value="5000" name="max-price">
-                </label>
-              </div>
+              <legend class="filter-title price-title">Цена: 100 ₽ – 500 ₽</legend>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 120px">

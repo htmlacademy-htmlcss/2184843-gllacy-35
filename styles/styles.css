@@ -554,7 +554,7 @@ body {
 .product-list {
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 30px;
+  gap: 90px 30px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1115,10 +1115,14 @@ body {
 }
 
 .select-control {
+  font-family: inherit;
+  font-size: 14px;
+  min-width: 196px;
   padding: 8px 16px;
   background-color: #fec7d5;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .filter-title {
@@ -1139,4 +1143,107 @@ body {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+
+/* Range */
+.range {
+  box-sizing: border-box;
+  width: 196px;
+  height: 36px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background-color: #fec7d5;
+
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: rgb(86, 92, 102, 0.3);
+  border-radius: 3px;
+  margin-top: 7px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #565c66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fcfcfc;
+  outline: 6px solid #2d3440;
+  outline-offset: -6px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #2d3440;
+  outline: 6px solid #fcfcfc;
+}
+
+.range-toggle:active {
+  outline: 6px solid #2d3440;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #000000;
+  border-radius: 50%;
+}
+
+.control:hover .control-mark {
+  border-color: #fcfcfc;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.5;
+}
+
+.control-input:disabled:hover + .control-mark {
+  border: 1.3px solid #000000;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #242424;
+  content: "";
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"] + .control-mark {
+  border-radius: 3px;
 }

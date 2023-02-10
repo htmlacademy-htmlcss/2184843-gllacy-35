@@ -63,11 +63,57 @@
                 Вход
               </a>
             </li>
-            <li class="user-menu-item">
+            <li class="user-menu-item popover-cart-open">
               <a class="user-menu-link cart-link" href="#">
                 <span class="visually-hidden">Корзина.</span>
                 2 товара
               </a>
+
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img src="images/raspberry.png" width="46" height="46" alt="Малинка.">
+                      <div class="cart-item-info-wrapper">
+                        <p class="cart-item-title">Малинка</p>
+                        <p class="cart-item-info">1 кг х 310 ₽</p>
+                      </div>
+                      <p class="cart-item-price">310 ₽</p>
+                      <button type="button" class="delete-cart-item-button">
+                        <svg class="delete-cart-item-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"
+                            fill="#2D3440" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img src="images/bubble-gum.png" width="46" height="46" alt="Бабл-гам.">
+                      <div class="cart-item-info-wrapper">
+                        <p class="cart-item-title">Бабл-гам</p>
+                        <p class="cart-item-info">1,5 кг х 320 ₽</p>
+                      </div>
+                      <p class="cart-item-price">480 ₽</p>
+                      <button type="button" class="delete-cart-item-button">
+                        <svg class="delete-cart-item-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"
+                            fill="#2D3440" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-confirm-wrapper">
+                    <button class="button pink-button cart-submit-button" type="button"> Оформить заказ</button>
+                    <p class="order-sum">Итого: <span class="cart-sum">790 ₽</span></p>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -259,22 +305,21 @@
               производства на развес</p>
             <ul class="about-us-list">
               <li class="about-us-item ice-cream-icon">
-                <p class="about-us-text">Всё наше мороженое изготавливается на собственном производстве с
-                  использованием
-                  современного оборудования и проверенных временем технологий.</p>
+                Всё наше мороженое изготавливается на собственном производстве с
+                использованием современного оборудования и проверенных временем технологий.
               </li>
               <li class="about-us-item cow-icon">
-                <p class="about-us-text">Закупка ингредиентов производится только
-                  у&nbsp;проверенных фермерских хозяйств, с которыми нас&nbsp;связывает долговременное сотрудничество.
-                </p>
+                Закупка ингредиентов производится только
+                у&nbsp;проверенных фермерских хозяйств, с которыми нас&nbsp;связывает долговременное сотрудничество.
+
               </li>
               <li class="about-us-item leaf-icon">
-                <p class="about-us-text">Для приготовления мороженого используются сливки и молоко высочайшего качества.
-                  Все ингредиенты и&nbsp;добавки произведены из натурального сырья.</p>
+                Для приготовления мороженого используются сливки и молоко высочайшего качества.
+                Все ингредиенты и&nbsp;добавки произведены из натурального сырья.
               </li>
               <li class="about-us-item termo-icon">
-                <p class="about-us-text">Доставка нашего мороженого осуществляется в специальном термопаке, который не
-                  даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                Доставка нашего мороженого осуществляется в специальном термопаке, который не
+                даёт мороженому растаять и позволяет сохранить превосходный вкус.
               </li>
             </ul>
           </section>
@@ -300,7 +345,7 @@
                 <label class="visually-hidden" for="subscription">Ваш e-mail.</label>
                 <input class="field subscription-field" type="email" name="email" placeholder="email@example.com"
                   id="subscription" required>
-                <button class="button pink-button" type="submit">Отправить</button>
+                <button class="button pink-button subscription-submit-button" type="submit">Отправить</button>
               </form>
             </section>
           </div>

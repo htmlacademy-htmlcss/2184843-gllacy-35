@@ -245,6 +245,10 @@ body {
   list-style-type: none;
 }
 
+.user-menu-item {
+  position: relative;
+}
+
 .phone-link {
   font-weight: 700;
   font-size: 16px;
@@ -318,7 +322,7 @@ body {
 
 .slider-left-column {
   width: 470px;
-  padding-left: 70px;
+  padding: 20px 0 0 70px;
 }
 
 .slider-product-title {
@@ -395,7 +399,7 @@ body {
   position: absolute;
   top: 50%;
   left: 20px;
-  transform: translateY(-50%);
+  transform: translateY(-46%);
   z-index: -1;
 }
 
@@ -408,7 +412,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 50%;
+  top: 49%;
 }
 
 .slider-next {
@@ -423,9 +427,11 @@ body {
 
 .ice-cream-preview {
   opacity: 0.3;
+  padding-top: 25px;
+  cursor: pointer;
 }
 
-.first-preview {
+.ice-cream-preview:not(:last-child) {
   margin-right: 39px;
 }
 
@@ -437,7 +443,7 @@ body {
   background-color: #fcfcfc;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-35%);
   z-index: -1;
 }
 
@@ -448,7 +454,7 @@ body {
 }
 
 .slider-pagination {
-  padding: 0;
+  padding: 5px 0 0;
   margin: 0;
   display: flex;
   gap: 8px;
@@ -486,7 +492,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 16px;
+  gap: 10px;
   list-style-type: none;
 }
 
@@ -519,13 +525,13 @@ body {
 .raspberry-gift {
   background-image: url("../images/raspberry-present.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
 }
 
 .marshmallow-gift {
   background-image: url("../images/marshmallow-present.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
 }
 
 .gift-title {
@@ -541,6 +547,10 @@ body {
   width: 330px;
   padding: 0;
   margin: 0 0 28px 0;
+}
+
+.gift-button {
+  max-width: 250px;
 }
 
 .popular-products {
@@ -572,7 +582,7 @@ body {
   display: block;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   position: absolute;
-  top: -55px;
+  top: -50px;
 }
 
 .product-list-link {
@@ -593,7 +603,7 @@ body {
 }
 
 .product-description {
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   padding: 0;
   color: #565c66;
   text-align: center;
@@ -604,6 +614,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
+  max-width: 150px;
 }
 
 .price-wrapper {
@@ -658,7 +669,7 @@ body {
 }
 
 .about-us {
-  padding: 56px 40px;
+  padding: 60px 40px;
   margin: 20px;
   display: inline-block;
   background-color: #ffffff;
@@ -672,9 +683,9 @@ body {
 .about-us-list {
   display: grid;
   grid-template-columns: 505px 505px;
-  gap: 32px 40px;
+  gap: 40px 35px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 3px;
   list-style-type: none;
 }
 
@@ -700,11 +711,6 @@ body {
   background: url("../images/termo-icon.svg") no-repeat left top;
 }
 
-.about-us-text {
-  margin: 0;
-  padding: 0;
-}
-
 .news-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -726,6 +732,7 @@ body {
 }
 
 .news-title {
+  max-width: 300px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -751,7 +758,6 @@ body {
 
 .newsletter {
   display: inline-block;
-  width: 570px;
   color: #565c66;
   background-color: #fcfcfc;
   border-radius: 16px;
@@ -761,6 +767,7 @@ body {
 }
 
 .newsletter-wrapper {
+  width: 570px;
   background-color: #1e90ff;
   background-image: url("../images/subscribtion-bg.png");
   background-repeat: no-repeat;
@@ -783,6 +790,10 @@ body {
   width: 332px;
 }
 
+.subscription-submit-button {
+  width: 160px;
+}
+
 .delivery {
   background-color: #fcfcfc;
   background-image: url("../images/delivery-bg.jpg");
@@ -799,11 +810,17 @@ body {
 
 .delivery-left-column {
   width: 380px;
-  margin-left: 36px;
+  margin: 5px 0 0 36px;
 }
 
 .delivery-title {
   text-align: left;
+  margin-bottom: 24px;
+}
+
+.delivery-description {
+  padding: 0;
+  margin: 0;
 }
 
 .delivery-form {
@@ -974,12 +991,16 @@ body {
   padding: 48px 14px 48px 0;
 }
 
+.footer-social-list {
+  gap: 13px;
+}
+
 .footer-menu {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 100px;
   width: 356px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 150px 210px;
   list-style-type: none;
 }
 
@@ -1001,7 +1022,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 .html-academy-link {
@@ -1246,4 +1267,123 @@ body {
 
 .control-input[type="checkbox"] + .control-mark {
   border-radius: 3px;
+}
+
+/* Popover */
+.popover {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 440px;
+  padding: 48px;
+  font-family: inherit;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  min-height: 156px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  display: none;
+}
+
+.popover-cart-open:hover .popover-cart {
+  display: block;
+}
+
+.popover-cart:hover {
+  display: block;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.cart-items-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 46px 150px 83px 20px;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+}
+
+.cart-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.cart-item:last-child {
+  margin-bottom: 50px;
+}
+
+.cart-item-title {
+  padding: 0;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.cart-item-info {
+  padding: 0;
+  margin: 0;
+  color: #b9b9b9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cart-item-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.delete-cart-item-button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-submit-button {
+  position: relative;
+  width: 200px;
+}
+
+.cart-submit-button::before {
+  content: "";
+  height: 1px;
+  background-color: #e7e7e7;
+  width: 345px;
+  position: absolute;
+  top: -32px;
+  left: 0;
+}
+
+.cart-confirm-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-sum {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }

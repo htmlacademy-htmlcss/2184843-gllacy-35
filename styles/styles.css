@@ -1387,3 +1387,46 @@ body {
   font-size: 18px;
   line-height: 22px;
 }
+
+/* Личный кабинет */
+.popover-auth-open:hover .popover-auth {
+  display: block;
+}
+
+.popover-auth-field {
+  width: 100%;
+}
+
+.popover-auth-field:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.popover-auth-field:last-of-type {
+  margin-bottom: 32px;
+}
+
+.auth-confirm-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.auth-links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-link {
+  color: #2d3440;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.auth-form-link:hover {
+  opacity: 0.6;
+}
+
+.auth-form-link:active {
+  opacity: 0.3;
+}

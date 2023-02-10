@@ -58,11 +58,29 @@
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
-            <li class="user-menu-item">
+            <li class="user-menu-item popover-auth-open">
               <a class="user-menu-link login-link" href="#">
                 Вход
               </a>
+
+              <div class="popover popover-auth">
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <form class="popover-auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <input class="field popover-auth-field" type="email" placeholder="email@example.com" required>
+                    <input class="field popover-auth-field" type="password" placeholder="••••••" required>
+                    <div class="auth-confirm-wrapper">
+                      <button class="button pink-button auth-button" type="submit">Войти</button>
+                      <div class="auth-links-wrapper">
+                        <a class="auth-form-link" href="#">Забыли пароль?</a>
+                        <a class="auth-form-link" href="#">Регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
+
             <li class="user-menu-item popover-cart-open">
               <a class="user-menu-link cart-link" href="#">
                 <span class="visually-hidden">Корзина.</span>

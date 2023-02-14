@@ -18,6 +18,12 @@
             <li class="navigation-item catalog-item">
               <a class="navigation-link catalog-link" href="catalog.html">
                 Каталог
+                <svg class="catalog-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.808 1.053a.667.667 0 0 0-.943.943l4.66 4.66a.665.665 0 0 0 .955 0l4.661-4.66a.667.667 0 0 0-.942-.943L6.003 5.248 1.808 1.053Z"
+                    fill="currentColor" />
+                </svg>
               </a>
               <div class="submenu-wrapper">
                 <ul class="submenu">
@@ -610,6 +616,30 @@
               target="_blank">.html academy</a> © 2021</p>
         </div>
       </footer>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="modal-name-field">Ваше ФИО.</label>
+            <input class="field modal-field" type="text" name="name" placeholder="Имя и фамилия" id="modal-name-field"
+              required>
+            <label class="visually-hidden" for="modal-email-field">Ваш e-mail.</label>
+            <input class="field modal-field" type="email" name="email" placeholder="email@example.com"
+              id="modal-email-field" required>
+            <label class="visually-hidden" for="modal-text-field">Комментарий.</label>
+            <input class="field modal-field text-field" type="text" name="text" placeholder="В свободной форме"
+              id="modal-text-field" required>
+            <button class="button pink-button modal-submit-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+
     </div>
   </body>
 

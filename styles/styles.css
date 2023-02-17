@@ -62,7 +62,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #2D3440;
+  color: #2d3440;
   background-color: #fcfcfc;
   padding: 12px 32px;
   border-radius: 26px;
@@ -108,18 +108,18 @@ body {
 .pink-button:hover {
   color: #2d3440;
   background: rgba(252, 252, 252, 0.3);
-  outline: 4px solid #FF2F64;
+  outline: 4px solid #ff2f64;
 }
 
 .pink-button:active {
   color: #fcfcfc;
-  background: #FEAFC3;
-  outline: 2px solid #2D3440;
+  background: #feafc3;
+  outline: 2px solid #2d3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .pink-button:focus {
-  outline: 2px solid #2D3440;
+  outline: 2px solid #2d3440;
   background-color: #ff2f64;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
@@ -1160,7 +1160,7 @@ body {
 .schedule {
   font-size: 14px;
   line-height: 20px;
-  color: #565C66;
+  color: #565c66;
   margin-bottom: 32px;
   display: block;
 }
@@ -1179,15 +1179,15 @@ body {
 
 .footer-menu {
   padding: 0;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 140px;
   width: 356px;
   display: grid;
-  grid-template-columns: 150px 210px;
+  grid-template-columns: 130px 210px;
+  gap: 0 20px;
   list-style-type: none;
 }
 
 .footer-menu-link {
-  padding-left: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1209,7 +1209,17 @@ body {
 
 .heart-link {
   font-weight: 700;
-  background: url("../images/heart-icon.svg") no-repeat left center;
+  position: relative;
+}
+
+.heart-link::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../images/heart-icon.svg) no-repeat center;
+  top: 2px;
+  left: -24px;
 }
 
 .html-logo-link:hover {
@@ -1384,6 +1394,7 @@ body {
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
+  -webkit-appearance: none;
   appearance: none;
   border: none;
   border-radius: 20px;
@@ -1431,7 +1442,6 @@ body {
   padding: 10px 16px;
   border-radius: 20px;
   background-color: #fec7d5;
-
 }
 
 .range-scale {
@@ -1570,6 +1580,7 @@ body {
 }
 
 .pagination {
+  width: 300px;
   padding: 0;
   margin: 0;
   display: flex;
@@ -1577,6 +1588,7 @@ body {
   gap: 2px;
   list-style-type: none;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .pagination-link {

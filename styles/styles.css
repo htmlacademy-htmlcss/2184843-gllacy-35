@@ -871,8 +871,8 @@ body {
   background-color: #fcfcfc;
   background-image: url("../images/news-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  background-size: contain;
+  background-position: top right;
   border-radius: 16px;
   padding: 32px;
   box-sizing: border-box;
@@ -926,6 +926,7 @@ body {
 }
 
 .newsletter {
+  height: -webkit-fill-available;
   display: inline-block;
   color: #565c66;
   background-color: #fcfcfc;
@@ -1887,7 +1888,7 @@ body {
 .tooltip {
   position: absolute;
   margin-top: 4px;
-  margin-left: 2px;
+  margin-left: 5px;
   width: 14px;
   height: 14px;
 }
